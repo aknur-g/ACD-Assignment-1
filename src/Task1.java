@@ -14,7 +14,6 @@ public class Task1 {
             System.out.println(number);
             return;
         }
-
         showDigits(number / 10);
         System.out.println(number % 10);
     }
