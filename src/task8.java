@@ -15,14 +15,14 @@ public class task8 {
         }
     }
 
-    public static boolean checkDigits(String s, int n){
-        if (n == s.length()){
+    public static boolean checkDigits(String s, int index){
+        if (index == s.length()){
             return true;
         }
 
-        if (!Character.isDigit(s.charAt(n))){
+        if (!Character.isDigit(s.charAt(index))){
             return false;
         }
-        return checkDigits(s, n+1);
+        return checkDigits(s, index+1);
     }
 }
